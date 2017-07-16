@@ -1,32 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="765.0" prefWidth="1111.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ar.com.miguel.controller.ABMC_Perros">
    <children>
-      <TabPane layoutX="43.0" layoutY="39.0" prefHeight="696.0" prefWidth="1021.0" tabClosingPolicy="UNAVAILABLE">
+      <TabPane layoutX="43.0" layoutY="56.0" prefHeight="679.0" prefWidth="1021.0" tabClosingPolicy="UNAVAILABLE">
         <tabs>
           <Tab text="Alta">
             <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="txtRazaAlta" layoutX="172.0" layoutY="66.0" />
+                        <Label layoutX="112.0" layoutY="71.0" text="Raza" />
+                        <Label layoutX="50.0" layoutY="124.0" text="Color de Pelo:" />
+                        <Label layoutX="113.0" layoutY="180.0" text="Pais:" />
+                        <TextField fx:id="txtColorPeloAlta" layoutX="172.0" layoutY="119.0" />
+                        <TextField fx:id="txtPaisAlta" layoutX="172.0" layoutY="175.0" />
+                        <Button fx:id="btnAlta" layoutX="457.0" layoutY="175.0" mnemonicParsing="false" onAction="#btnAlta" prefHeight="31.0" prefWidth="101.0" text="Alta" />
+                     </children>
+                  </AnchorPane>
             </content>
           </Tab>
           <Tab text="Baja">
             <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="393.0" prefWidth="635.0">
+                           <children>
+                              <TextField fx:id="txtRazaBaja" layoutX="172.0" layoutY="66.0" />
+                              <Label layoutX="112.0" layoutY="71.0" text="Raza" />
+                              <Label layoutX="50.0" layoutY="124.0" text="Color de Pelo:" />
+                              <Label layoutX="113.0" layoutY="180.0" text="Pais:" />
+                              <TextField fx:id="txtColorPeloBaja" layoutX="172.0" layoutY="119.0" />
+                              <TextField fx:id="txtPaisBaja" layoutX="172.0" layoutY="175.0" />
+                              <Button fx:id="btnBaja" layoutX="457.0" layoutY="175.0" mnemonicParsing="false" onAction="#btnBaja" prefHeight="31.0" prefWidth="101.0" text="Baja" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
             </content>
           </Tab>
             <Tab text="Modificacion">
               <content>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="449.0" prefWidth="710.0">
+                           <children>
+                              <TextField fx:id="txtRazaModificar" layoutX="172.0" layoutY="66.0" />
+                              <Label layoutX="112.0" layoutY="71.0" text="Raza" />
+                              <Label layoutX="50.0" layoutY="124.0" text="Color de Pelo:" />
+                              <Label layoutX="113.0" layoutY="180.0" text="Pais:" />
+                              <TextField fx:id="txtColorPeloModificar" layoutX="172.0" layoutY="119.0" />
+                              <TextField fx:id="txtPaisModificar" layoutX="172.0" layoutY="175.0" />
+                              <Button fx:id="btnModificar" layoutX="457.0" layoutY="175.0" mnemonicParsing="false" onAction="#btnModificar" prefHeight="31.0" prefWidth="101.0" text="Modificar" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
               </content>
             </Tab>
             <Tab text="Listado">
               <content>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="btnListar" layoutX="771.0" layoutY="485.0" mnemonicParsing="false" onAction="#btnListar" prefHeight="31.0" prefWidth="124.0" text="Listar" />
+                        <TextArea fx:id="txtAreaListado" layoutX="174.0" layoutY="86.0" prefHeight="337.0" prefWidth="631.0" />
+                     </children>
+                  </AnchorPane>
               </content>
             </Tab>
         </tabs>

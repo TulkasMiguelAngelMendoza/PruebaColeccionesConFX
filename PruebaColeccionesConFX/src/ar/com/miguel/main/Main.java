@@ -16,12 +16,12 @@ public class Main extends Application{
     @Override
     public void start(Stage primaryStage) throws Exception {
                                         
-        Parent root=FXMLLoader.load(getClass().getResource("/view/FXML_MostrarCliente.fxml"));
+        Parent root=FXMLLoader.load(getClass().getResource("/ar/com/miguel/view/ABMC_Perros.fxml"));
         
         
         Scene scene=new Scene(root);
         
-        primaryStage.setTitle("Aplicacion Cliente");
+        primaryStage.setTitle("Aplicacion Perros");
         primaryStage.setResizable(false);
         
         primaryStage.setScene(scene);
